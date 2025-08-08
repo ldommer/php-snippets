@@ -1,0 +1,88 @@
+{
+    "Anonymous function": {
+        "prefix": "func",
+        "body": ["function (${1:string} \\$${2:param}): ${3:void} {", "\t${0:// code}", "}"],
+        "description": "Anonymous function"
+    },
+    "Anonymous function with variable assignment": {
+        "prefix": "funcva",
+        "body": ["\\$${1:var} = function (${1:string} \\$${2:param}): ${3:void} {", "\t${0:// code}", "}"],
+        "description": "Anonymous function"
+    },
+    "Anonymous generator function": {
+        "prefix": "funcg",
+        "body": [
+            "function ${1:function_name} (${2:string} \\$${3:param}): \\Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Anonymous generator function"
+    },
+    "Anonymous generator function with variable assignment": {
+        "prefix": "funcgva",
+        "body": [
+            "\\$${1:var} = function ${1:function_name} (${2:string} \\$${3:param}): \\Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Anonymous generator function with variable assignment"
+    },
+    "Anonymous variadic function": {
+        "prefix": "funcv",
+        "body": [
+            "function ${1:function_name} (${2:string} ...\\$${3:params}): ${4:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Variadic function"
+    },
+    "Anonymous variadic function with variable assignment": {
+        "prefix": "funcvva",
+        "body": [
+            "\\$${1:var} = function ${1:function_name} (${2:string} ...\\$${3:params}): ${4:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Variadic function"
+    },
+    "Arrow function": {
+        "prefix": "fn",
+        "body": ["fn (${1:string} \\$${2:param}) => ${0: // code}"],
+        "description": "Arrow function"
+    },
+    "Arrow function with variable assignment": {
+        "prefix": "fnva",
+        "body": ["\\$${1:var} = fn (${1:string} \\$${2:param}) => ${0: // code}"],
+        "description": "Arrow function"
+    },
+    "Closure function": {
+        "prefix": "funcc",
+        "body": ["function (${1:string} \\$${2:param}) use (\\$${3:var}): ${4:void} {", "\t${0:// code}", "}"],
+        "description": "Anonymous function"
+    },
+    "Closure function with variable assignment": {
+        "prefix": "funccva",
+        "body": [
+            "\\$${1:var} = function (${2:string} \\$${3:param}) use (\\$${4:var}): ${5:void} {",
+            "\t${0:// code}",
+            "};"
+        ],
+        "description": "Anonymous function"
+    },
+    "Named function": {
+        "prefix": "funcn",
+        "body": ["function ${1:function_name} (${2:string} \\$${3:param}): ${4:void} {", "\t${0:// code}", "}"],
+        "description": "Named function"
+    },
+    "Named function with function exists": {
+        "prefix": "funcnfe",
+        "body": [
+            "if (!function_exists('${1:function_name}')) {",
+            "\tfunction ${1:function_name} (${2:string} \\$${3:param}): ${4:void} {",
+            "\t\t${0:// code}",
+            "\t}",
+            "}"
+        ],
+        "description": "Named function with function exists"
+    }
+}
