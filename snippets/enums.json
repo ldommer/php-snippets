@@ -1,17 +1,34 @@
 {
     "Basic enum": {
         "prefix": "enum",
-        "body": ["enum ${1:EnumName}", "{", "\tcase ${0:Case};", "}"],
+        "body": [
+            "enum ${1:EnumName}",
+            "{",
+            "\tcase ${0:Case};",
+            "}"
+        ],
         "description": "Basic enum"
     },
     "Basic enum implements interface": {
         "prefix": "enumi",
-        "body": ["enum ${1:EnumName} implements ${2:Interface}", "{", "\tcase ${0:Case};", "}"],
+        "body": [
+            "enum ${1:EnumName} implements ${2:Interface}",
+            "{",
+            "\tcase ${0:Case};",
+            "}"
+        ],
         "description": "Basic enum implements interface"
     },
     "Basic enum implements trait": {
         "prefix": "enumt",
-        "body": ["enum ${1:EnumName}", "{", "\tuse ${2:Enumerable};", "", "\tcase ${0:Case};", "}"],
+        "body": [
+            "enum ${1:EnumName}",
+            "{",
+            "\tuse ${2:Enumerable};",
+            "",
+            "\tcase ${0:Case};",
+            "}"
+        ],
         "description": "Basic enum implements trait"
     },
     "Basic enum implements interface and trait": {
@@ -28,17 +45,34 @@
     },
     "Backed int enum": {
         "prefix": "enumbi",
-        "body": ["enum ${1:EnumName}: int", "{", "\tcase ${2:Case} = ${0:1};", "}"],
+        "body": [
+            "enum ${1:EnumName}: int",
+            "{",
+            "\tcase ${2:Case} = ${0:1};",
+            "}"
+        ],
         "description": "Backed int enum"
     },
     "Backed int enum implements interface": {
         "prefix": "enumbii",
-        "body": ["enum ${1:EnumName}: int implements ${2:Interface}", "{", "\tcase ${3:Case} = ${0:1};", "}"],
+        "body": [
+            "enum ${1:EnumName}: int implements ${2:Interface}",
+            "{",
+            "\tcase ${3:Case} = ${0:1};",
+            "}"
+        ],
         "description": "Backed int enum implements interface"
     },
     "Backed int enum implements trait": {
         "prefix": "enumbit",
-        "body": ["enum ${1:EnumName}: int", "{", "\tuse ${2:Enumerable};", "", "\tcase ${0:Case};", "}"],
+        "body": [
+            "enum ${1:EnumName}: int",
+            "{",
+            "\tuse ${2:Enumerable};",
+            "",
+            "\tcase ${0:Case};",
+            "}"
+        ],
         "description": "Backed int enum implements trait"
     },
     "Backed int enum implements interface and trait": {
@@ -55,12 +89,22 @@
     },
     "Backed string Enum": {
         "prefix": "enumbs",
-        "body": ["enum ${1:EnumName}: string", "{", "\tcase ${2:Case} = '${0:string}';", "}"],
+        "body": [
+            "enum ${1:EnumName}: string",
+            "{",
+            "\tcase ${2:Case} = '${0:string}';",
+            "}"
+        ],
         "description": "Backed string Enum"
     },
     "Backed string Enum implements Interface": {
         "prefix": "enumbsi",
-        "body": ["enum ${1:EnumName}: string implements ${2:Interface}", "{", "\tcase ${3:Case} = '${0:string}';", "}"],
+        "body": [
+            "enum ${1:EnumName}: string implements ${2:Interface}",
+            "{",
+            "\tcase ${3:Case} = '${0:string}';",
+            "}"
+        ],
         "description": "Backed string Enum implements Interface"
     },
     "Backed string enum implements trait": {
