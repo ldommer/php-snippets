@@ -20,7 +20,7 @@
     "Anonymous generator function": {
         "prefix": "funcg",
         "body": [
-            "function ${1:function_name} (${2:string} \\$${3:param}): Generator {",
+            "function (${1:string} \\$${2:param}): Generator {",
             "\tyield ${0:// code}",
             "}"
         ],
@@ -29,7 +29,7 @@
     "Anonymous generator function with variable assignment": {
         "prefix": "funcgva",
         "body": [
-            "\\$${1:var} = function ${1:function_name} (${2:string} \\$${3:param}): Generator {",
+            "\\$${1:var} = function (${1:string} \\$${2:param}): Generator {",
             "\tyield ${0:// code}",
             "}"
         ],
@@ -38,16 +38,16 @@
     "Anonymous variadic function": {
         "prefix": "funcv",
         "body": [
-            "function ${1:function_name} (${2:string} ...\\$${3:params}): ${4:void} {",
+            "function (${1:string} ...\\$${2:params}): ${3:void} {",
             "\t${0:// code}",
             "}"
         ],
-        "description": "Anonymous variadic functionn"
+        "description": "Anonymous variadic function"
     },
     "Anonymous variadic function with variable assignment": {
         "prefix": "funcvva",
         "body": [
-            "\\$${1:var} = function ${1:function_name} (${2:string} ...\\$${3:params}): ${4:void} {",
+            "\\$${1:var} = function (${1:string} ...\\$${2:params}): ${3:void} {",
             "\t${0:// code}",
             "}"
         ],
@@ -88,7 +88,7 @@
     "Closure generator function": {
         "prefix": "funccg",
         "body": [
-            "function ${1:function_name} (${2:string} \\$${3:param}) use (\\$${4:var}): Generator {",
+            "function (${1:string} \\$${2:param}) use (\\$${3:var}): Generator {",
             "\tyield ${0:// code}",
             "}"
         ],
@@ -97,7 +97,7 @@
     "Closure generator function with variable assignment": {
         "prefix": "funccgva",
         "body": [
-            "\\$${1:var} = function ${1:function_name} (${2:string} \\$${3:param}) use (\\$${4:var}): Generator {",
+            "\\$${1:var} = function (${1:string} \\$${2:param}) use (\\$${3:var}): Generator {",
             "\tyield ${0:// code}",
             "}"
         ],
@@ -106,16 +106,16 @@
     "Closure variadic function": {
         "prefix": "funccv",
         "body": [
-            "function ${1:function_name} (${2:string} ...\\$${3:params}) use (\\$${4:var}): ${5:void} {",
+            "function (${1:string} ...\\$${2:params}) use (\\$${3:var}): ${4:void} {",
             "\t${0:// code}",
             "}"
         ],
         "description": "Closure variadic function"
     },
     "Closure variadic function with variable assignment": {
-        "prefix": "funcvva",
+        "prefix": "funccvva",
         "body": [
-            "\\$${1:var} = function ${1:function_name} (${2:string} ...\\$${3:params}) use (\\$${4:var}): ${5:void} {",
+            "\\$${1:var} = function (${1:string} ...\\$${2:params}) use (\\$${3:var}): ${4:void} {",
             "\t${0:// code}",
             "}"
         ],
@@ -140,5 +140,127 @@
             "}"
         ],
         "description": "Named function with function exists check"
+    },
+    "Static anonymous function": {
+        "prefix": "funcs",
+        "body": [
+            "static function (${1:string} \\$${2:param}): ${3:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous function"
+    },
+    "Static anonymous function with variable assignment": {
+        "prefix": "funcsva",
+        "body": [
+            "\\$${1:var} = static function (${1:string} \\$${2:param}): ${3:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous function with variable assignment"
+    },
+    "Static anonymous generator function": {
+        "prefix": "funcsg",
+        "body": [
+            "static function (${1:string} \\$${2:param}): Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous generator function"
+    },
+    "Static anonymous generator function with variable assignment": {
+        "prefix": "funcsgva",
+        "body": [
+            "\\$${1:var} = static function (${1:string} \\$${2:param}): Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous generator function with variable assignment"
+    },
+    "Static anonymous variadic function": {
+        "prefix": "funcsv",
+        "body": [
+            "static function (${1:string} ...\\$${2:params}): ${3:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous variadic function"
+    },
+    "Static anonymous variadic function with variable assignment": {
+        "prefix": "funcsvva",
+        "body": [
+            "\\$${1:var} = static function (${1:string} ...\\$${2:params}): ${3:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static anonymous variadic function with variable assignment"
+    },
+    "Static arrow function": {
+        "prefix": "fns",
+        "body": [
+            "static fn (${1:string} \\$${2:param}) => ${0: // code}"
+        ],
+        "description": "Static arrow function"
+    },
+    "Static arrow function with variable assignment": {
+        "prefix": "fnsva",
+        "body": [
+            "\\$${1:var} = static fn (${1:string} \\$${2:param}) => ${0: // code}"
+        ],
+        "description": "Static arrow function with variable assignment"
+    },
+    "Static closure function": {
+        "prefix": "funcsc",
+        "body": [
+            "static function (${1:string} \\$${2:param}) use (\\$${3:var}): ${4:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static closure function"
+    },
+    "Static closure function with variable assignment": {
+        "prefix": "funcscva",
+        "body": [
+            "\\$${1:var} = static function (${2:string} \\$${3:param}) use (\\$${4:var}): ${5:void} {",
+            "\t${0:// code}",
+            "};"
+        ],
+        "description": "Static closure function with variable assignment"
+    },
+    "Static closure generator function": {
+        "prefix": "funcscg",
+        "body": [
+            "function (${1:string} \\$${2:param}) use (\\$${3:var}): Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Static closure generator function"
+    },
+    "Static closure generator function with variable assignment": {
+        "prefix": "funcscgva",
+        "body": [
+            "\\$${1:var} = static function (${1:string} \\$${2:param}) use (\\$${3:var}): Generator {",
+            "\tyield ${0:// code}",
+            "}"
+        ],
+        "description": "Static closure generator function with variable assignment"
+    },
+    "Static closure variadic function": {
+        "prefix": "funcscv",
+        "body": [
+            "static function (${1:string} ...\\$${2:params}) use (\\$${3:var}): ${4:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static closure variadic function"
+    },
+    "Static closure variadic function with variable assignment": {
+        "prefix": "funcscvva",
+        "body": [
+            "\\$${1:var} = function (${1:string} ...\\$${2:params}) use (\\$${3:var}): ${4:void} {",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Static closure variadic function with variable assignment"
     }
 }
