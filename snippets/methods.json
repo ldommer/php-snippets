@@ -1,0 +1,137 @@
+{
+    "Private method": {
+        "prefix": "prif",
+        "body": [
+            "private function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private method"
+    },
+    "Final private method": {
+        "prefix": "fprif",
+        "body": [
+            "final private function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final private method"
+    },
+    "Private static method": {
+        "prefix": "prisf",
+        "body": [
+            "private static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private static method"
+    },
+    "Final private static method": {
+        "prefix": "fprisf",
+        "body": [
+            "final private static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final private static method"
+    },
+    "Protected method": {
+        "prefix": "prof",
+        "body": [
+            "protected function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected method"
+    },
+    "Abstract protected method": {
+        "prefix": "aprof",
+        "body": ["abstract protected function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void};"],
+        "description": "Abstract protected method"
+    },
+    "Final protected method": {
+        "prefix": "fprof",
+        "body": [
+            "final protected function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final protected method"
+    },
+    "Protected static method": {
+        "prefix": "prosf",
+        "body": [
+            "protected static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected static method"
+    },
+    "Abstract protected static method": {
+        "prefix": "aprosf",
+        "body": ["abstract protected static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void};"],
+        "description": "Abstract protected static method"
+    },
+    "Final protected static method": {
+        "prefix": "fprosf",
+        "body": [
+            "final protected static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final protected static method"
+    },
+    "Public method": {
+        "prefix": "pubf",
+        "body": ["public function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}", "{", "\t${0:// code}", "}"],
+        "description": "Public method"
+    },
+    "Abstract public method": {
+        "prefix": "apubf",
+        "body": ["abstract public function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void};"],
+        "description": "Abstract public method"
+    },
+    "Final public method": {
+        "prefix": "fpubf",
+        "body": [
+            "final public function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final public method"
+    },
+    "Public static method": {
+        "prefix": "pubsf",
+        "body": [
+            "public static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public static method"
+    },
+    "Abstract public static method": {
+        "prefix": "apubsf",
+        "body": ["abstract public static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void};"],
+        "description": "Abstract public static method"
+    },
+    "Final public static method": {
+        "prefix": "fpubsf",
+        "body": [
+            "final public static function ${1:methodName}(${2:mixed} \\$${3:param}): ${4:void}",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Final public static method"
+    }
+}
