@@ -1,0 +1,67 @@
+{
+    "name": "php-snippets",
+    "displayName": "PHP Snippets",
+    "description": "A collection of useful PHP snippets.",
+    "version": "0.0.1",
+    "publisher": "ldommer",
+    "author": {
+        "name": "Lennart Dommer"
+    },
+    "license": "MIT",
+    "icon": "img/php-snippets-icon.png",
+    "galleryBanner": {
+        "color": "#f5f5f5",
+        "theme": "light"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "autocomplete",
+        "completion",
+        "developer tool",
+        "development",
+        "enum",
+        "function",
+        "intellisense",
+        "live template",
+        "method",
+        "oop",
+        "php",
+        "php7",
+        "php8",
+        "productivity",
+        "rapid development",
+        "shortcuts",
+        "snippets",
+        "templates"
+    ],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ldommer/php-snippets"
+    },
+    "bugs": {
+        "url": "https://github.com/ldommer/php-snippets/issues"
+    },
+    "homepage": "https://github.com/ldommer/php-snippets",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/enums.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/functions.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/methods.json"
+            }
+        ]
+    }
+}
