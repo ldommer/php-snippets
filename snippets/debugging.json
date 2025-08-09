@@ -1,4 +1,13 @@
 {
+    "Dump": {
+        "prefix": "dump",
+        "body": [
+            "echo '<pre>';'",
+            "\tvar_dump(${0:var});}",
+            "echo '</pre>';"
+        ],
+        "description": "Dump"
+    },
     "Dump and exit": {
         "prefix": "de",
         "body": [
@@ -8,14 +17,5 @@
             "exit;"
         ],
         "description": "Dump and exit"
-    },
-    "Dump": {
-        "prefix": "dump",
-        "body": [
-            "echo '<pre>';'",
-            "\tvar_dump(${0:var});}",
-            "echo '</pre>';"
-        ],
-        "description": "Dump"
     }
 }
