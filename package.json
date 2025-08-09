@@ -1,7 +1,7 @@
 {
     "name": "php-snippets",
     "displayName": "PHP Snippets",
-    "description": "A collection of useful PHP snippets.",
+    "description": "A collection of useful PHP snippets including features of PHP7 and PHP8.",
     "version": "0.0.1",
     "publisher": "ldommer",
     "author": {
@@ -19,7 +19,10 @@
     ],
     "keywords": [
         "autocomplete",
+        "code",
+        "coding",
         "completion",
+        "debugging",
         "developer tool",
         "development",
         "enum",
@@ -32,7 +35,6 @@
         "php7",
         "php8",
         "productivity",
-        "rapid development",
         "shortcuts",
         "snippets",
         "templates"
@@ -50,6 +52,10 @@
     "homepage": "https://github.com/ldommer/php-snippets",
     "contributes": {
         "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/debugging.json"
+            },
             {
                 "language": "php",
                 "path": "./snippets/enums.json"
