@@ -1,0 +1,242 @@
+{
+    "Private class constructor": {
+        "prefix": "pric",
+        "body": [
+            "private function __construct(${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor"
+    },
+    "Private class constructor empty": {
+        "prefix": "price",
+        "body": [
+            "private function __construct()",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor empty"
+    },
+    "Private class constructor with private property promotion": {
+        "prefix": "pricpripp",
+        "body": [
+            "private function __construct(private ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with private property promotion"
+    },
+    "Private class constructor with private readonly property promotion": {
+        "prefix": "pricprirpp",
+        "body": [
+            "private function __construct(private readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with private readonly property promotion"
+    },
+    "Private class constructor with protected property promotion": {
+        "prefix": "pricpropp",
+        "body": [
+            "private function __construct(protected ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with protected property promotion"
+    },
+    "Private class constructor with protected readonly property promotion": {
+        "prefix": "pricprorpp",
+        "body": [
+            "private function __construct(protected readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with protected readonly property promotion"
+    },
+    "Private class constructor with public property promotion": {
+        "prefix": "pricpubpp",
+        "body": [
+            "private function __construct(public ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with public property promotion"
+    },
+    "Private class constructor with public readonly property promotion": {
+        "prefix": "pricpubrpp",
+        "body": [
+            "private function __construct(public readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Private class constructor with public readonly property promotion"
+    },
+    "Protected class constructor": {
+        "prefix": "proc",
+        "body": [
+            "protected function __construct(${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor"
+    },
+    "Protected class constructor empty": {
+        "prefix": "proce",
+        "body": [
+            "protected function __construct()",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor empty"
+    },
+    "Protected class constructor with private property promotion": {
+        "prefix": "procpripp",
+        "body": [
+            "protected function __construct(private ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with private property promotion"
+    },
+    "Protected class constructor with private readonly property promotion": {
+        "prefix": "procprirpp",
+        "body": [
+            "protected function __construct(private readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with private readonly property promotion"
+    },
+    "Protected class constructor with protected property promotion": {
+        "prefix": "procpropp",
+        "body": [
+            "protected function __construct(protected ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with protected property promotion"
+    },
+    "Protected class constructor with protected readonly property promotion": {
+        "prefix": "procprorpp",
+        "body": [
+            "protected function __construct(protected readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with protected readonly property promotion"
+    },
+    "Protected class constructor with public property promotion": {
+        "prefix": "procpubpp",
+        "body": [
+            "protected function __construct(public ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with public property promotion"
+    },
+    "Protected class constructor with public readonly property promotion": {
+        "prefix": "procpubrpp",
+        "body": [
+            "protected function __construct(public readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Protected class constructor with public readonly property promotion"
+    },
+    "Public class constructor": {
+        "prefix": "pubc",
+        "body": [
+            "public function __construct(${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor"
+    },
+    "Public class constructor empty": {
+        "prefix": "pubce",
+        "body": [
+            "public function __construct()",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor empty"
+    },
+    "Public class constructor with private property promotion": {
+        "prefix": "pubcpripp",
+        "body": [
+            "public function __construct(private ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with private property promotion"
+    },
+    "Public class constructor with private readonly property promotion": {
+        "prefix": "pubcprirpp",
+        "body": [
+            "public function __construct(private readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with private readonly property promotion"
+    },
+    "Public class constructor with protected property promotion": {
+        "prefix": "pubcpropp",
+        "body": [
+            "public function __construct(protected ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with protected property promotion"
+    },
+    "Public class constructor with protected readonly property promotion": {
+        "prefix": "pubcprorpp",
+        "body": [
+            "public function __construct(protected readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with protected readonly property promotion"
+    },
+    "Public class constructor with public property promotion": {
+        "prefix": "pubcpubpp",
+        "body": [
+            "public function __construct(public ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with public property promotion"
+    },
+    "Public class constructor with public readonly property promotion": {
+        "prefix": "pubcpubrpp",
+        "body": [
+            "public function __construct(public readonly ${1:string} \\$${2:param})",
+            "{",
+            "\t${0:// code}",
+            "}"
+        ],
+        "description": "Public class constructor with public readonly property promotion"
+    }
+}

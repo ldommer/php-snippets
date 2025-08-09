@@ -22,8 +22,8 @@
         "code",
         "coding",
         "completion",
+        "constructor",
         "debugging",
-        "developer tool",
         "development",
         "enum",
         "function",
@@ -37,7 +37,8 @@
         "productivity",
         "shortcuts",
         "snippets",
-        "templates"
+        "templates",
+        "tool"
     ],
     "engines": {
         "vscode": "^1.0.0"
